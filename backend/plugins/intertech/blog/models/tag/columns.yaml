@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: ID
+        type: text
+        sortable: true
+    title:
+        label: Title
+        type: text
+        sortable: true
+    slug:
+        label: Slug
+        type: text
+    is_enabled:
+        label: Enabled
+        type: switch
