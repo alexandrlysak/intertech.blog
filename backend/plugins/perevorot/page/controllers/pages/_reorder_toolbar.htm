@@ -1,0 +1,4 @@
+<div data-control="toolbar">
+    <a href="<?= Backend::url('perevorot/page/pages/?menu='.$this->menu) ?>" class="btn btn-primary oc-icon-caret-left"><?= e(trans('perevorot.page::lang.plugin.back_from_reorder')); ?></a>
+    <a class="btn btn-default oc-icon-eraser" data-request-redirect="<?= Request::fullUrl() ?>" data-request="onResetTree" data-popup-load-indicator data-request-confirm="Сбросить вложенность разделов? Эту операцию нельзя будет отменить"><?= e(trans('perevorot.page::lang.plugin.reset_tree')); ?></a>
+</div>

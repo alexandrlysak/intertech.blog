@@ -1,0 +1,13 @@
+title: External
+modelClass: Perevorot\Seo\Models\External
+list: $/perevorot/seo/models/external/columns.yaml
+recordUrl: 'perevorot/seo/external/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+defaultSort:
+    column: url_mask
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

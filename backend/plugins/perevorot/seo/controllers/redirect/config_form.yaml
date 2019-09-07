@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Redirect
+
+# Model Form Field configuration
+form: $/perevorot/seo/models/redirect/fields.yaml
+
+# Model Class name
+modelClass: Perevorot\Seo\Models\Redirect
+
+# Default redirect location
+defaultRedirect: perevorot/seo/redirects
+
+# Create page
+create:
+    title: Create Redirect
+    redirect: perevorot/seo/redirect/update/:id
+    redirectClose: perevorot/seo/redirect
+
+# Update page
+update:
+    title: Edit Redirect
+    redirect: perevorot/seo/redirect
+    redirectClose: perevorot/seo/redirect
+
+# Preview page
+preview:
+    title: Preview Redirect

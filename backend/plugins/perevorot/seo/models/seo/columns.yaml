@@ -1,0 +1,16 @@
+columns:
+    url_mask:
+        label: Гиперссылка/Роут
+        type: partial
+    title:
+        label: Title
+        type: text
+    description:
+        label: Description
+        type: text
+    keywords:
+        label: Keywords
+        type: text
+    is_active:
+        label: Включено на сайте
+        type: inetis-list-switch

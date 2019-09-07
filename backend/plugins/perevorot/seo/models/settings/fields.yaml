@@ -1,0 +1,51 @@
+tabs:
+    defaultTab: Мета-теги
+    fields:
+        title:
+            type: text
+            label: Title
+            span: left
+    
+        additional_tags:
+            type: textarea
+            label: Дополнительные теги
+            span: right
+
+        description:
+            type: textarea
+            label: Description
+            size: small
+            span: left
+    
+        keywords:
+            type: textarea
+            span: left
+            label: Keywords
+            size: small
+            
+        og_image:
+            tab: Facebook
+            label: Изображение
+            span: right
+            type: fileupload
+            imageHeight: 150
+            fileTypes: ico,png,jpg,jpeg,gif
+    
+        og_sitename:
+            tab: Facebook
+            span: left
+            type: text
+            label: Название сайта
+
+        og_title:
+            tab: Facebook
+            span: left
+            type: text
+            label: Заголовок
+
+        og_description:
+            tab: Facebook
+            span: left
+            size: large
+            type: textarea
+            label: Описание

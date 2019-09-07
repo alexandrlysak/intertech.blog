@@ -1,0 +1,10 @@
+name: Seo
+form: $/perevorot/seo/models/seo/fields.yaml
+modelClass: Perevorot\Seo\Models\Seo
+defaultRedirect: perevorot/seo/tags
+create:
+    redirect: 'perevorot/seo/tags/update/:id'
+    redirectClose: perevorot/seo/tags
+update:
+    redirect: perevorot/seo/tags
+    redirectClose: perevorot/seo/tags

@@ -1,0 +1,37 @@
+fields:
+    email:
+        label: Электронный адрес
+        type: text
+        span: left
+    # social_fb:
+    #     label: Facebook
+    #     tab: Социальные сети
+    #     type: text
+    #     span: right
+    # phone:
+    #     label: Телефон
+    #     type: text
+    #     span: left
+    # social_instagram:
+    #     label: Instagram
+    #     tab: Социальные сети
+    #     type: text
+    #     span: right
+    # address:
+    #     label: Адрес
+    #     type: textarea
+    #     span: left
+    #     size: small
+    # working_hours:
+    #     label: Время работы
+    #     type: textarea
+    #     span: right
+    #     size: small
+    # location:
+    #     label: Поиск координаты
+    #     span: full
+    #     type: address-locator
+    # gps_location:
+    #     label: Размещение на карте
+    #     type: location-selector
+    #     span: full

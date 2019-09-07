@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="{{ frontend_url }}/css/app.css" rel="stylesheet">
+        <script src="{{ frontend_url }}/js/app.js"></script>
+    </head>
+    <body style="background:#FFF">
+        <div class="slide">
+            <div class="container" id="longread"></div>
+        </div>
+        <script>
+            $.ajax({
+                url: '{{ url }}',
+                type: 'post',
+                dataType: 'html',
+                success: function (html) {
+                    $('#longread').append(html);
+                }
+            });
+        </script>
+    </body>
+</html>

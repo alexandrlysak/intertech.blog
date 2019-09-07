@@ -1,0 +1,29 @@
+fields:
+    old_url:
+        label: Старая ссылка
+        type: text
+        span: left
+        comment: Например -  /url
+
+    new_url:
+        label: Куда переадресовывать
+        type: text
+        span: right
+        comment: Например - /url
+
+    is_enabled:
+        label: Активность
+        type: switch
+        span: left
+        default: true
+        comment: Активность редиректа
+
+    counter:
+        label: Счетчик
+        type: number
+        span: right
+        default: 0
+        comment: Количество переходов
+        readOnly: true
+        disabled: true
+        context: [update, preview]

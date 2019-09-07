@@ -1,0 +1,16 @@
+columns:
+    url_mask:
+        label: Гиперссылка/Роут
+        type: partial
+    head:
+        label: 'В &lt;head&gt;'
+        type: partial
+    body_top:
+        label: 'В начале &lt;body&gt;'
+        type: partial
+    body_bottom:
+        label: 'В конце &lt;body&gt;'
+        type: partial
+    is_active:
+        label: На сайте
+        type: switch

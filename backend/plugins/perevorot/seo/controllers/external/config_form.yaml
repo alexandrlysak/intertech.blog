@@ -1,0 +1,10 @@
+name: External
+form: $/perevorot/seo/models/external/fields.yaml
+modelClass: Perevorot\Seo\Models\External
+defaultRedirect: perevorot/seo/external
+create:
+    redirect: 'perevorot/seo/external/update/:id'
+    redirectClose: perevorot/seo/external
+update:
+    redirect: perevorot/seo/external
+    redirectClose: perevorot/seo/external

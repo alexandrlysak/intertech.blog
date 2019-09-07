@@ -1,0 +1,39 @@
+fields:
+    seo_url_type:
+        label: Тип
+        type: radio
+        default: 0
+        options:
+            0: Роут сайта
+            1: Произвольная ссылка
+    url_mask:
+        label: Гиперссылка
+        comment: 'Шаблон с возможностью использования маски без указания языка. Например: /, /*, /news, /news-*, /news-some-news-href'
+        span: left
+        type: text
+        trigger:
+            action: show
+            field: seo_url_type
+            condition: value[1]
+    route:
+        label: Роут сайта
+        span: left
+        type: dropdown
+        trigger:
+            action: show
+            field: seo_url_type
+            condition: value[0]
+    head:
+        label: 'В <head>'
+        type: textarea
+    body_top:
+        label: 'В начале <body>'
+        span: left
+        type: textarea
+    body_bottom:
+        label: 'В конце <body>'
+        span: right
+        type: textarea
+    is_active:
+        label: На сайте
+        type: switch

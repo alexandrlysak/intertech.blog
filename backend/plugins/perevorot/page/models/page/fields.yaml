@@ -1,0 +1,94 @@
+fields:
+    title:
+        label: 'perevorot.page::lang.form.page.title'
+        placeholder: 'perevorot.page::lang.form.page.placeholder_title'
+        span: left
+        type: mltext
+    url:
+        label: 'perevorot.page::lang.form.page.url'
+        placeholder: 'perevorot.page::lang.form.page.placeholder_url'
+        type: text
+        span: right
+        cssClass: hide
+        preset:
+            field: title
+            type: url
+        trigger:
+            action: show
+            field: type
+            condition: 'value[1]'
+    url_external:
+        label: 'perevorot.page::lang.form.page.url_external'
+        placeholder: 'perevorot.page::lang.form.page.placeholder_url'
+        cssClass: hide
+        type: text
+        span: right
+        trigger:
+            action: show
+            field: type
+            condition: 'value[3]'
+    alias_page_id:
+        label: 'perevorot.page::lang.form.page.alias_page_id'
+        cssClass: hide
+        span: right
+        type: dropdown
+        trigger:
+            action: show
+            field: type
+            condition: 'value[2]'
+    route_name:
+        label: 'perevorot.page::lang.form.page.route_type'
+        cssClass: hide
+        span: right
+        type: dropdown
+        trigger:
+            action: show
+            field: type
+            condition: 'value[4]'
+    toolbar:
+        type: partial
+        path: form_toolbar
+        cssClass: collapse-visible
+secondaryTabs:
+    fields:
+        type:
+            label: 'perevorot.page::lang.form.page.type'
+            span: left
+            type: dropdown
+            containerAttributes:
+                style: 'padding:10px'
+            tab: Настройки
+        route_id:
+            label: 'perevorot.page::lang.form.page.route_id'
+            span: right
+            type: dropdown
+            dependsOn: route_name
+            containerAttributes:
+                style: 'padding:10px'
+            tab: Настройки
+        menu:
+            type: partial
+            path: $/perevorot/page/controllers/pages/_menu_field.htm
+            tab: Настройки
+        is_target_blank:
+            label: 'perevorot.page::lang.form.page.is_target_blank'
+            type: switch
+            containerAttributes:
+                style: 'padding:10px'
+            tab: Настройки
+        is_hidden:
+            label: 'perevorot.page::lang.form.page.is_hidden'
+            comment: 'perevorot.page::lang.form.page.is_hidden_comment'
+            type: switch
+            default: true
+            containerAttributes:
+                style: 'padding:10px'
+            tab: Настройки
+        is_disabled:
+            label: 'perevorot.page::lang.form.page.is_disabled'
+            comment: 'perevorot.page::lang.form.page.is_disabled_comment'
+            type: switch
+            default: false
+            containerAttributes:
+                style: 'padding:10px'
+            tab: Настройки

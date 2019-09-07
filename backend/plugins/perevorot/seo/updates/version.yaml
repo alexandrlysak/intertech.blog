@@ -1,0 +1,29 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table perevorot_seo_parameters'
+    - builder_table_create_perevorot_seo_parameters.php
+1.0.3:
+    - 'Updated table perevorot_seo_parameters'
+    - builder_table_update_perevorot_seo_seo.php
+1.0.4:
+    - 'Updated table perevorot_seo_seo'
+    - builder_table_update_perevorot_seo_seo_2.php
+1.0.5:
+    - 'Updated table perevorot_seo_seo'
+    - builder_table_update_perevorot_seo_seo_3.php
+1.0.6:
+    - 'Created table perevorot_seo_external'
+    - builder_table_create_perevorot_seo_external.php
+1.0.7:
+    - 'Updated table perevorot_seo_external'
+    - builder_table_update_perevorot_seo_external.php
+1.0.8:
+    - 'Dynamic image'
+    - builder_table_update_perevorot_seo_seo_4.php
+1.0.9:
+    - 'Add is_active field'
+    - builder_table_update_perevorot_seo_seo_5.php
+1.0.10:
+    - 'Created table perevorot_seo_redirect'
+    - builder_table_create_perevorot_seo_redirect.php

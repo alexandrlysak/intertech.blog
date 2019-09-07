@@ -1,0 +1,9 @@
+plugin:
+    name: Общие настройки
+    description: ''
+    author: perevorot
+    icon: oc-icon-adjust
+permissions:
+    common.settings:
+        tab: Общие настройки
+        label: Настройки сайта

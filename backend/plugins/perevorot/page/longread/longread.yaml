@@ -1,0 +1,43 @@
+text_blocks:
+    name: Текстовые блоки
+    icon: icon-paragraph
+    blocks:
+        text:
+            name: Текстовый блок
+            image: /storage/backend/text.png
+            fields:
+                text_title:
+                    span: left
+                    type: text
+                    label: Заголовок блока
+                text_text:
+                    span: left
+                    type: richeditor
+                    size: large
+                    toolbarButtons: "fullscreen,paragraphFormat,bold,italic,underline,formatOL,formatUL,strikeThrough,subscript,superscript,quote,insertLink,insertImage,insertVideo,insertFile,undo,redo,clearFormatting"
+
+image_blocks:
+    name: Графические блоки
+    icon: icon-picture-o
+    blocks:
+        image:
+            name: Картинка
+            #image: /storage/backend/image.png
+            # config:
+            #     thumbs:
+            #         - 2000x1325xauto
+            #         - 1400x930xauto
+            #         - 700x460xauto
+            #         - 300x200xauto
+            fields:
+                image:
+                    comment: 'Для добавления описания, нажмите на загруженное изображение'
+                    span: left
+                    type: fileupload
+                    mode: image
+                    imageWidth: 100
+
+# ready_blocks:
+#     name: Готовые блоки
+#     icon: icon-cube
+#     blocks:

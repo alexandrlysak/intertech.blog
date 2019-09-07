@@ -1,0 +1,32 @@
+columns:
+    id:
+        label: ID
+        invisible: true
+
+    old_url:
+        label: Старая ссылка
+        searchable: true
+        sortable: true
+
+    new_url:
+        label: Новая ссылка
+        searchable: true
+        sortable: true
+
+    counter:
+        label: Счетчик
+        searchable: true
+        sortable: true
+
+    is_enabled:
+        label: Видимость
+        type: switch
+        sortable: true
+    
+    created_at:
+        label: Дата создания
+        invisible: true
+
+    updated_at:
+        label: Дата обновления
+        invisible: true

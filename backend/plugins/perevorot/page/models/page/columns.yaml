@@ -1,0 +1,35 @@
+columns:
+    title:
+        label: 'perevorot.page::lang.list.page.title'
+        type: text
+        searchable: true
+        sortable: false
+
+    url:
+        label: 'perevorot.page::lang.list.page.url'
+        type: partial
+        searchable: true
+        sortable: false
+
+    is_target_blank:
+        label: 'perevorot.page::lang.list.page.is_target_blank'
+        type: inetis-list-switch
+        invisible: true
+        sortable: false
+
+    is_hidden:
+        label: 'perevorot.page::lang.list.page.is_hidden'
+        type: inetis-list-switch
+        sortable: false
+
+    is_disabled:
+        label: 'perevorot.page::lang.form.page.is_disabled'
+        invisible: true
+        sortable: false
+        type: inetis-list-switch
+
+    is_divider:
+        label: 'Разделитель'
+        invisible: true
+        sortable: false
+        type: inetis-list-switch

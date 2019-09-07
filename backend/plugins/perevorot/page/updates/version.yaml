@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table perevorot_page_page'
+    - builder_table_create_perevorot_page_page.php
+1.0.3:
+    - 'Created table perevorot_page_menu'
+    - builder_table_create_perevorot_page_menu.php
+1.0.4:
+    - 'Updated table perevorot_page_page'
+    - builder_table_update_perevorot_page_page.php
+1.0.5:
+    - 'Updated table perevorot_page_page'
+    - builder_table_update_perevorot_page_page_2.php
+1.0.7:
+    - 'Created table perevorot_page_slug'
+    - builder_table_create_perevorot_page_slug.php
+1.0.8:
+    - 'Updated table perevorot_page_page'
+    - builder_table_update_perevorot_page_page_4.php
+1.0.9:
+    - 'Updated table perevorot_page_page'
+    - builder_table_update_perevorot_page_page_5.php
+1.0.10:
+    - 'Updated table perevorot_page_page'
+    - builder_table_update_perevorot_page_page3.php

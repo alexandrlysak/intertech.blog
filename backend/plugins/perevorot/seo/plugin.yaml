@@ -1,0 +1,51 @@
+plugin:
+    name: 'perevorot.seo::lang.plugin.name'
+    description: 'perevorot.seo::lang.plugin.description'
+    author: Perevorot
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    seo:
+        label: SEO
+        url: perevorot/seo/tags
+        icon: icon-search
+        permissions:
+            - seo.permission.list
+        sideMenu:
+            tags:
+                label: Meta-теги
+                url: perevorot/seo/tags
+                icon: icon-sitemap
+                permissions:
+                    - seo.permission.list
+            external:
+                label: Внешние скрипты
+                url: perevorot/seo/external
+                icon: icon-code
+                permissions:
+                    - seo.permission.list
+            redirect:
+                label: Переадресация
+                url: perevorot/seo/redirect
+                icon: icon-external-link
+                permissions:
+                    - seo.permission.redirect
+permissions:
+    seo.permission.list:
+        tab: SEO
+        label: 'Список SEO параметров'
+    seo.permission.create:
+        tab: SEO
+        label: 'Добавление SEO параметров'
+    seo.permission.edit:
+        tab: SEO
+        label: 'Редактирование SEO параметров'
+    seo.permission.delete:
+        tab: SEO
+        label: 'Удаление SEO параметров'
+    seo.permission.settings:
+        tab: SEO
+        label: 'Редактирование SEO настроек по умолчанию'
+    seo.permission.redirect:
+        tab: SEO
+        label: 'Редактирование переадресаций'
