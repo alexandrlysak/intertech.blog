@@ -32,14 +32,14 @@ class ControlLibrary
             return $returnGrouped ? $this->groupedControls : $this->controls;
         }
 
-        Event::fire('pages.builder.registerControls', [$this]);
-
         $this->groupedControls = [
             $this->resolveControlGroupName(self::GROUP_STANDARD) => [],
             $this->resolveControlGroupName(self::GROUP_WIDGETS) => []
         ];
 
-        foreach ($this->controls as $controlType=>$controlInfo) {
+        Event::fire('pages.builder.registerControls', [$this]);
+
+        foreach ($this->controls as $controlType => $controlInfo) {
             $controlGroup = $this->resolveControlGroupName($controlInfo['group']);
 
             if (!array_key_exists($controlGroup, $this->groupedControls)) {
@@ -159,6 +159,10 @@ class ControlLibrary
             ],
             'disabled' => [
                 'title' => Lang::get('rainlab.builder::lang.form.property_disabled_title'),
+                'type' => 'checkbox'
+            ],
+            'readOnly' => [
+                'title' => Lang::get('rainlab.builder::lang.form.property_read_only_title'),
                 'type' => 'checkbox'
             ],
             'hidden' => [
@@ -299,11 +303,11 @@ class ControlLibrary
 
     protected function resolveControlGroupName($group)
     {
-        if ($group == self::GROUP_STANDARD) {
+        if ($group === self::GROUP_STANDARD) {
             return Lang::get('rainlab.builder::lang.form.control_group_standard');
         }
 
-        if ($group == self::GROUP_WIDGETS) {
+        if ($group === self::GROUP_WIDGETS) {
             return Lang::get('rainlab.builder::lang.form.control_group_widgets');
         }
 

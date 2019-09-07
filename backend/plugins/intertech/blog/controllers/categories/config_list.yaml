@@ -1,0 +1,13 @@
+list: $/intertech/blog/models/category/columns.yaml
+modelClass: Intertech\Blog\Models\Category
+title: Categories
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+showTree: 1
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'intertech/blog/categories/update/:id'

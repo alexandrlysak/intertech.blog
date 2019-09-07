@@ -1,0 +1,30 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        required: 1
+        preset:
+            field: title
+            type: slug
+        type: text
+    category:
+        label: Category
+        nameFrom: title
+        descriptionFrom: description
+        span: auto
+        type: relation
+    tags:
+        label: Tags
+        span: auto
+        nameFrom: title
+        type: taglist
+        mode: relation
+    is_enabled:
+        label: Enabled
+        span: auto
+        type: switch

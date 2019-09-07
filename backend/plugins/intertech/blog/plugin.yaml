@@ -1,0 +1,24 @@
+plugin:
+    name: 'intertech.blog::lang.plugin.name'
+    description: 'intertech.blog::lang.plugin.description'
+    author: intertech
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    blog-menu-item:
+        label: Blog
+        url: intertech/blog/categories
+        icon: icon-life-ring
+        sideMenu:
+            categories-menu-item:
+                label: Categories
+                url: intertech/blog/categories
+                icon: icon-sitemap
+            posts-menu-item:
+                label: Posts
+                url: intertech/blog/posts
+                icon: icon-sitemap
+            tags-menu-item:
+                label: Tags
+                url: intertech/blog/tags
+                icon: icon-sitemap

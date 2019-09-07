@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: ID
+        type: text
+        sortable: true
+    title:
+        label: Title
+        type: text
+        sortable: true
+    slug:
+        label: Slug
+        type: text
+        sortable: true
+    is_enabled:
+        label: Enabled
+        type: switch
+        sortable: true
+    created_at:
+        label: Created
+        type: datetime
+        sortable: true
+    updated_at:
+        label: Updated
+        type: datetime
+        sortable: true

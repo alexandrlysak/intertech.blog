@@ -1,0 +1,5 @@
+title: Categories
+nameFrom: title
+modelClass: Intertech\Blog\Models\Category
+toolbar:
+    buttons: reorder_toolbar
