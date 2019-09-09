@@ -1,0 +1,10 @@
+name: Tags
+form: $/intertech/blog/models/tag/fields.yaml
+modelClass: Intertech\Blog\Models\Tag
+defaultRedirect: intertech/blog/tags
+create:
+    redirect: 'intertech/blog/tags/update/:id'
+    redirectClose: intertech/blog/tags
+update:
+    redirect: intertech/blog/tags
+    redirectClose: intertech/blog/tags

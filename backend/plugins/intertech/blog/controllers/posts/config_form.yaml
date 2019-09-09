@@ -1,0 +1,10 @@
+name: Posts
+form: $/intertech/blog/models/post/fields.yaml
+modelClass: Intertech\Blog\Models\Post
+defaultRedirect: intertech/blog/posts
+create:
+    redirect: 'intertech/blog/posts/update/:id'
+    redirectClose: intertech/blog/posts
+update:
+    redirect: intertech/blog/posts
+    redirectClose: intertech/blog/posts

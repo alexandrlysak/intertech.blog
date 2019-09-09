@@ -1,0 +1,10 @@
+name: Categories
+form: $/intertech/blog/models/category/fields.yaml
+modelClass: Intertech\Blog\Models\Category
+defaultRedirect: intertech/blog/categories
+create:
+    redirect: 'intertech/blog/categories/update/:id'
+    redirectClose: intertech/blog/categories
+update:
+    redirect: intertech/blog/categories
+    redirectClose: intertech/blog/categories

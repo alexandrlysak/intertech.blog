@@ -1,0 +1,25 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    is_enabled:
+        label: Enabled
+        span: auto
+        type: switch
+tabs:
+    fields:
+        posts:
+            label: Posts
+            span: auto
+            nameFrom: title
+            descriptionFrom: description
+            type: relation
+            tab: 'Tab 1'

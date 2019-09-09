@@ -1,29 +1,28 @@
-# About
-OctoberCMS plugin to add a toggleable switch as a column type to the backend.
+# ListSwitch
+This OctoberCMS plugin add the possibility to create buttons in backend lists that toggle a model property.
+That allow you to create a publish / unpublish button on the lists backend (see bellow for demo).
 
-## Usage
-
-To add a switch column to a list; set the `type` of the column to `inetis-list-switch`. 
-
-Example:
+## Setup
+For add this feature to your list you just need to edit the `columns.yaml` field of your model.
 ```yaml
-your_column:
+your_field:
     label: 'Your Label'
-    # Define the type as "inetis-list-switch" to enable this functionality
-    type: inetis-list-switch
-    
-    # Whether to use ✓/✗ icons to replace the Yes/No text (default: true)
-    icon: true
-   
-    # Overrides the title displayed on hover over the column
-    titleTrue: 'Unpublish item' # (default: 'inetis.listswitch::lang.inetis.listswitch.title_true')
-    titleFalse: 'Publish item' # (default: 'inetis.listswitch::lang.inetis.listswitch.title_false')
-    
-    # Overrides the text displayed on the button
-    textTrue: 'Published' # (default: 'inetis.listswitch::lang.inetis.listswitch.text_true')
-    textFalse: 'Unpublished' #(default: 'inetis.listswitch::lang.inetis.listswitch.text_false')
-```
+    type: inetis-list-switch # define the type "inetis-list-switch" for create a button
 
+    icon: true # If true replace Yes/No text by ✓/✗ icons (default: true)
+
+    # With the two following params, you can override 
+    # the default title displayed on the button hover 
+    # You can use translation strings
+    titleTrue: 'Unpublish item' # by default : Click to switch to No
+    titleFalse: 'Publish item' # by default : Click to switch to Yes
+    
+    # For override the text of the button
+    # the default title displayed on the button hover
+    # You can use translation strings
+    textTrue: 'Published' # by default : Yes
+    textFalse: 'Unpublished' # by default : No
+```
 
 ## Demo
 *Default behavior*  
