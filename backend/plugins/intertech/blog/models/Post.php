@@ -17,11 +17,26 @@ class Post extends Model
     ];
 
     
-
     /**
      * @var string The database table used by the model.
      */
     public $table = 'intertech_blog_posts';
+
+    
+    // Set translatable fields
+    public $translatable = [['title']];
+
+    public static function boot()
+    {
+        parent::boot();
+        if (!class_exists('RainLab\Translate\Behaviors\TranslatableModel'))
+            return;
+
+        self::extend(function($model)
+        {
+            $model->implement[] = 'RainLab.Translate.Behaviors.TranslatableModel';
+        });
+    }
 
     /* Relations */
 

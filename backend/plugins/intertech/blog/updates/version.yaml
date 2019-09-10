@@ -60,3 +60,9 @@
 1.0.21:
     - 'Updated table intertech_blog_tags'
     - builder_table_update_intertech_blog_tags_6.php
+1.0.22:
+    - 'Updated table intertech_blog_posts'
+    - builder_table_update_intertech_blog_posts_4.php
+1.0.23:
+    - 'Updated table intertech_blog_posts'
+    - builder_table_update_intertech_blog_posts_5.php

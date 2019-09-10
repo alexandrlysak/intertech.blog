@@ -28,3 +28,35 @@ fields:
         label: Enabled
         span: auto
         type: switch
+    is_payout:
+        label: Payout
+        span: auto
+        type: switch
+    payout:
+        label: 'Payout data'
+        span: full
+        trigger:
+            action: show
+            field: is_payout
+            condition: checked
+        type: section
+        comment: 'Add payout options'
+    payout_options:
+        label: 'Payout options'
+        prompt: 'Add new item'
+        span: auto
+        trigger:
+            action: show
+            field: is_payout
+            condition: checked
+        type: repeater
+        form:
+            fields:
+                option:
+                    label: Option
+                    span: auto
+                    type: text
+                value:
+                    label: Value
+                    span: auto
+                    type: text
