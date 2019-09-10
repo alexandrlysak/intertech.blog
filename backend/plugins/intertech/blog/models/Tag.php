@@ -25,4 +25,20 @@ class Tag extends Model
     protected $fillable = [
         'title'
     ];
+
+
+    // Set translatable fields
+    public $translatable = [['title']];
+
+    public static function boot()
+    {
+        parent::boot();
+        if (!class_exists('RainLab\Translate\Behaviors\TranslatableModel'))
+            return;
+
+        self::extend(function($model)
+        {
+            $model->implement[] = 'RainLab.Translate.Behaviors.TranslatableModel';
+        });
+    }
 }
