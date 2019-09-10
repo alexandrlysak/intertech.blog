@@ -1167,10 +1167,10 @@ class Lists extends WidgetBase
         $contents = '';
 
         if ($value) {
-            $contents = '<i class="icon-check" style="color: green;"></i>';
+            $contents = Lang::get('backend::lang.list.column_switch_true');
         }
         else {
-            $contents = '<i class="icon-times" style="color: red;"></i>';
+            $contents = Lang::get('backend::lang.list.column_switch_false');
         }
 
         return $contents;
