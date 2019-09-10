@@ -66,3 +66,6 @@
 1.0.23:
     - 'Updated table intertech_blog_posts'
     - builder_table_update_intertech_blog_posts_5.php
+1.0.24:
+    - 'Updated table intertech_blog_posts'
+    - builder_table_update_intertech_blog_posts_6.php

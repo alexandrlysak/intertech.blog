@@ -22,6 +22,8 @@ class Post extends Model
      */
     public $table = 'intertech_blog_posts';
 
+    protected $jsonable = ['payout_options'];
+
     
     // Set translatable fields
     public $translatable = [['title']];
