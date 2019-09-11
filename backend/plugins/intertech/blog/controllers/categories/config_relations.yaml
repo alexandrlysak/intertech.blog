@@ -1,0 +1,8 @@
+posts:
+  label: Post
+  view:
+    
+    list: $/intertech/blog/models/post/columns.yaml
+    toolbarButtons: add|remove
+    manage:
+      recordsPerPage: 10

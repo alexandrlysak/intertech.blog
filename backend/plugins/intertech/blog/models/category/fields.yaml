@@ -17,9 +17,6 @@ fields:
 tabs:
     fields:
         posts:
-            label: Posts
-            span: auto
-            nameFrom: title
-            descriptionFrom: description
-            type: relation
-            tab: 'Tab 1'
+           tab: Posts
+           label: Posts
+           type: partial

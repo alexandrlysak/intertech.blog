@@ -2,38 +2,24 @@ columns:
     id:
         label: ID
         type: text
-        searchable: true
         sortable: true
     title:
         label: Title
         type: text
-        searchable: true
         sortable: true
     slug:
         label: Slug
         type: text
-        searchable: true
         sortable: true
     is_enabled:
         label: Enabled
         type: switch
-        searchable: true
         sortable: true
-    category:
-        label: Category
-        type: text
-        searchable: true
-        sortable: true
-        select: title
-        relation: category    
     created_at:
         label: Created
         type: datetime
-        searchable: true
         sortable: true
     updated_at:
         label: Updated
         type: datetime
-        searchable: true
         sortable: true
-    

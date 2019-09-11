@@ -1,0 +1,46 @@
+scopes:
+
+  id:
+    label: ID
+    type: text
+    conditions: id=:value
+    size: 10
+
+  title:
+    label: Title
+    type: text
+    conditions: title = :value
+
+  slug:
+    label: Slug
+    type: text
+    conditions: slug = :value  
+
+  is_enabled:
+    label: 'Show enabled'
+    type: checkbox
+    conditions: is_enabled = true
+
+  categories:
+    label: Categories
+    modelClass: Intertech\Blog\Models\Category
+    conditions: category_id IN (:filtered)
+    nameFrom: title
+
+  tags:
+    label: Tags
+    modelClass: Intertech\Blog\Models\Tag
+    conditions: id IN (SELECT post_id FROM intertech_blog_posts_tags WHERE post_id IN(:filtered))
+    nameFrom: title
+
+  created_at:
+    label: Created
+    type: daterange
+    conditions: created_at >= ':after' AND created_at <= ':before'
+
+  updated_at:
+    label: Updated
+    type: daterange  
+    conditions: updated_at >= ':after' AND updated_at <= ':before'
+
+
