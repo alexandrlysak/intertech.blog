@@ -69,3 +69,6 @@
 1.0.24:
     - 'Updated table intertech_blog_posts'
     - builder_table_update_intertech_blog_posts_6.php
+1.0.25:
+    - 'Drop table intertech_blog_posts_categories'
+    - builder_table_delete_intertech_blog_posts_categories.php

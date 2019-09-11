@@ -1,21 +1,5 @@
 scopes:
 
-  id:
-    label: ID
-    type: text
-    conditions: id=:value
-    size: 10
-
-  title:
-    label: Title
-    type: text
-    conditions: title = :value
-
-  slug:
-    label: Slug
-    type: text
-    conditions: slug = :value  
-
   is_enabled:
     label: 'Show enabled'
     type: checkbox
